@@ -1,0 +1,501 @@
+---
+import Navbar from '../components/Navbar';
+import Content from '../components/Content';
+import "../styles/global.css";
+import proyecto1 from '../assets/1.jpg';
+import proyecto2 from '../assets/2.jpg';
+import proyecto3 from '../assets/3.jpg';
+import proyecto4 from '../assets/4.jpg';
+import proyecto5 from '../assets/6.png';
+import proyecto6 from '../assets/7.png';
+---
+
+<div class="relative min-h-screen w-full overflow-hidden">
+  <Content client:load />
+  <div class="relative z-10">
+    <Navbar client:load />
+    <div class="container mx-auto px-4 py-8 mt-16">
+      <h1 class="text-4xl md:text-5xl font-bold text-center mb-12 gradient-text">Nuestros Proyectos</h1>
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 gap-8">
+          <!-- Proyecto 1: Radio Web WordPress -->
+          <div class="bg-white/10 backdrop-blur-md rounded-xl p-8 text-white border border-white/10 hover:border-blue-400/50 transition-colors">
+            <h3 class="text-2xl font-bold mb-4 text-blue-400">Radio Web WordPress</h3>
+            <p class="text-gray-200 mb-6 text-lg leading-relaxed">
+              Plataforma web de radio desarrollada con WordPress, ofreciendo streaming en vivo, 
+              programaci&oacute;n autom&aacute;tica y gesti&oacute;n completa de contenido multimedia para estaciones 
+              de radio online con dise&ntilde;o moderno y funcionalidades avanzadas.
+            </p>
+            
+            <div class="mb-6">
+              <img src={proyecto5.src} alt="Radio Web WordPress" class="w-full max-w-full rounded-lg shadow-lg mb-6" />
+            </div>
+            
+            <div class="mb-6">
+              <h4 class="text-xl font-semibold mb-3 text-blue-300">Caracter&iacute;sticas Principales:</h4>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Reproductor de audio integrado con controles personalizados</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Programaci&oacute;n autom&aacute;tica con playlists y horarios</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Chat en vivo para interacci&oacute;n con oyentes</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Panel de administraci&oacute;n para gesti&oacute;n de contenido</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Integraci&oacute;n con redes sociales y notificaciones</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">WordPress</span>
+              <span class="px-3 py-1 bg-yellow-600/20 text-yellow-400 rounded-full text-sm">PHP</span>
+              <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">MySQL</span>
+              <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">JavaScript</span>
+              <span class="px-3 py-1 bg-red-600/20 text-red-400 rounded-full text-sm">CSS3</span>
+              <span class="px-3 py-1 bg-orange-600/20 text-orange-400 rounded-full text-sm">HTML5</span>
+            </div>
+          </div>
+
+          <!-- Proyecto 2: Radio Streaming Platform -->
+          <div class="bg-white/10 backdrop-blur-md rounded-xl p-8 text-white border border-white/10 hover:border-blue-400/50 transition-colors">
+            <h3 class="text-2xl font-bold mb-4 text-blue-400">Radio Streaming Platform</h3>
+            <p class="text-gray-200 mb-6 text-lg leading-relaxed">
+              Plataforma avanzada de streaming de radio con m&uacute;ltiples canales, 
+              desarrollada con WordPress y tecnolog&iacute;as web modernas, proporcionando 
+              una experiencia de usuario excepcional con alta calidad de audio y 
+              funcionalidades interactivas.
+            </p>
+            
+            <div class="mb-6">
+              <img src={proyecto6.src} alt="Radio Streaming Platform" class="w-full max-w-full rounded-lg shadow-lg mb-6" />
+            </div>
+            
+            <div class="mb-6">
+              <h4 class="text-xl font-semibold mb-3 text-blue-300">Funcionalidades Avanzadas:</h4>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">M&uacute;ltiples canales de radio con gesti&oacute;n independiente</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Sistema de suscripciones y membres&iacute;as premium</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">An&aacute;lisis de audiencia y estad&iacute;sticas en tiempo real</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Aplicaci&oacute;n m&oacute;vil responsive para acceso multiplataforma</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Integraci&oacute;n con servicios de pago y publicidad</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">WordPress</span>
+              <span class="px-3 py-1 bg-yellow-600/20 text-yellow-400 rounded-full text-sm">PHP</span>
+              <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">MySQL</span>
+              <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">JavaScript</span>
+              <span class="px-3 py-1 bg-red-600/20 text-red-400 rounded-full text-sm">CSS3</span>
+              <span class="px-3 py-1 bg-orange-600/20 text-orange-400 rounded-full text-sm">HTML5</span>
+            </div>
+          </div>
+
+          <!-- Proyecto 3: Wellogi App -->
+          <div class="bg-white/10 backdrop-blur-md rounded-xl p-8 text-white border border-white/10 hover:border-blue-400/50 transition-colors">
+            <h3 class="text-2xl font-bold mb-4 text-blue-400">Wellogi App</h3>
+            <p class="text-gray-200 mb-6 text-lg leading-relaxed">
+              Aplicaci&oacute;n web de log&iacute;stica y gesti&oacute;n de env&iacute;os desarrollada con tecnolog&iacute;as modernas, 
+              ofreciendo soluciones integrales para el seguimiento, optimizaci&oacute;n y automatizaci&oacute;n 
+              de procesos log&iacute;sticos empresariales.
+            </p>
+            
+            <div class="mb-6">
+              <img src={proyecto3.src} alt="Wellogi App" class="w-full max-w-full rounded-lg shadow-lg mb-6" />
+            </div>
+            
+            <div class="mb-6">
+              <h4 class="text-xl font-semibold mb-3 text-blue-300">Características Principales:</h4>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Seguimiento en tiempo real de env&iacute;os con geolocalizaci&oacute;n</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Optimizaci&oacute;n de rutas con algoritmos inteligentes</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Gesti&oacute;n de inventario y almacenes automatizada</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Integraci&oacute;n con m&uacute;ltiples proveedores de transporte</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Dashboard anal&iacute;tico con m&eacute;tricas de rendimiento</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">TypeScript</span>
+              <span class="px-3 py-1 bg-red-600/20 text-red-400 rounded-full text-sm">Angular</span>
+              <span class="px-3 py-1 bg-yellow-600/20 text-yellow-400 rounded-full text-sm">AWS</span>
+              <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">Lambda</span>
+              <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">API Gateway</span>
+              <span class="px-3 py-1 bg-orange-600/20 text-orange-400 rounded-full text-sm">HTML5</span>
+              <span class="px-3 py-1 bg-pink-600/20 text-pink-400 rounded-full text-sm">CSS3</span>
+            </div>
+          </div>
+
+          <!-- Proyecto 4: Portal de Pintura -->
+          <div class="bg-white/10 backdrop-blur-md rounded-xl p-8 text-white border border-white/10 hover:border-blue-400/50 transition-colors">
+            <h3 class="text-2xl font-bold mb-4 text-blue-400">Portal de Pintura</h3>
+            <p class="text-gray-200 mb-6 text-lg leading-relaxed">
+              Plataforma web especializada en servicios de pintura y decoraci&oacute;n, desarrollada con tecnolog&iacute;as Microsoft, 
+              ofreciendo una experiencia completa para clientes y profesionales del sector.
+            </p>
+            
+            <div class="mb-6">
+              <img src={proyecto1.src} alt="Portal de Pintura" class="w-full max-w-full rounded-lg shadow-lg mb-6" />
+            </div>
+            
+            <div class="mb-6">
+              <h4 class="text-xl font-semibold mb-3 text-blue-300">Caracter&iacute;sticas Principales:</h4>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Cat&aacute;logo de productos de pintura con filtros por tipo, color y marca</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Calculadora de presupuestos autom&aacute;tica con cotizaciones en tiempo real</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Sistema de citas y agendamiento para servicios profesionales</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Galer&iacute;a de proyectos con antes y despu&eacute;s de trabajos realizados</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Panel de administraci&oacute;n para gesti&oacute;n de inventario y clientes</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">C#</span>
+              <span class="px-3 py-1 bg-red-600/20 text-red-400 rounded-full text-sm">Angular</span>
+              <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">SQL Server</span>
+              <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">Blazor</span>
+              <span class="px-3 py-1 bg-orange-600/20 text-orange-400 rounded-full text-sm">HTML5</span>
+              <span class="px-3 py-1 bg-pink-600/20 text-pink-400 rounded-full text-sm">CSS3</span>
+            </div>
+          </div>
+
+          <!-- Proyecto 5: Time Tracking -->
+          <div class="bg-white/10 backdrop-blur-md rounded-xl p-8 text-white border border-white/10 hover:border-blue-400/50 transition-colors">
+            <h3 class="text-2xl font-bold mb-4 text-blue-400">Time Tracking</h3>
+            <p class="text-gray-200 mb-6 text-lg leading-relaxed">
+              Sistema de seguimiento de tiempo desarrollado con tecnolog&iacute;as Microsoft, 
+              dise&ntilde;ado para optimizar la productividad y gesti&oacute;n de proyectos empresariales 
+              con reportes detallados y an&aacute;lisis de eficiencia.
+            </p>
+            
+            <div class="mb-6">
+              <img src={proyecto2.src} alt="Time Tracking" class="w-full max-w-full rounded-lg shadow-lg mb-6" />
+            </div>
+            
+            <div class="mb-6">
+              <h4 class="text-xl font-semibold mb-3 text-blue-300">Funcionalidades:</h4>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Registro de tiempo con cron&oacute;metro integrado y pausas autom&aacute;ticas</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Gesti&oacute;n de proyectos y tareas con categorizaci&oacute;n avanzada</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Reportes de productividad con gr&aacute;ficos y an&aacute;lisis de tendencias</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Sistema de facturaci&oacute;n autom&aacute;tica basado en horas trabajadas</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Integraci&oacute;n con calendarios y notificaciones de recordatorio</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">C#</span>
+              <span class="px-3 py-1 bg-red-600/20 text-red-400 rounded-full text-sm">Angular</span>
+              <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">SQL Server</span>
+              <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">Blazor</span>
+              <span class="px-3 py-1 bg-orange-600/20 text-orange-400 rounded-full text-sm">HTML5</span>
+              <span class="px-3 py-1 bg-pink-600/20 text-pink-400 rounded-full text-sm">CSS3</span>
+            </div>
+          </div>
+
+          <!-- Proyecto 6: VB -->
+          <div class="bg-white/10 backdrop-blur-md rounded-xl p-8 text-white border border-white/10 hover:border-blue-400/50 transition-colors">
+            <h3 class="text-2xl font-bold mb-4 text-blue-400">VB</h3>
+            <p class="text-gray-200 mb-6 text-lg leading-relaxed">
+              Aplicaci&oacute;n empresarial desarrollada con tecnolog&iacute;as Microsoft Azure, 
+              implementando arquitectura cloud-native con servicios gestionados para 
+              alta disponibilidad, escalabilidad y seguridad empresarial.
+            </p>
+            
+            <div class="mb-6">
+              <img src={proyecto4.src} alt="VB" class="w-full max-w-full rounded-lg shadow-lg mb-6" />
+            </div>
+            
+            <div class="mb-6">
+              <h4 class="text-xl font-semibold mb-3 text-blue-300">Caracter&iacute;sticas Principales:</h4>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Arquitectura serverless con Azure Functions para procesamiento escalable</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Gesti&oacute;n segura de secretos y configuraciones con Azure Key Vault</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Monitoreo y telemetr&iacute;a avanzada con Application Insights</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Despliegue automatizado con Azure DevOps y CI/CD</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Integraci&oacute;n con servicios Azure para alta disponibilidad</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">C#</span>
+              <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Azure</span>
+              <span class="px-3 py-1 bg-yellow-600/20 text-yellow-400 rounded-full text-sm">Key Vault</span>
+              <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">Application Insights</span>
+              <span class="px-3 py-1 bg-orange-600/20 text-orange-400 rounded-full text-sm">Azure Functions</span>
+            </div>
+          </div>
+
+          <!-- Proyecto 7: Mudanzas Internacionales App -->
+          <div class="bg-white/10 backdrop-blur-md rounded-xl p-8 text-white border border-white/10 hover:border-blue-400/50 transition-colors">
+            <h3 class="text-2xl font-bold mb-4 text-blue-400">Mudanzas Internacionales App</h3>
+            <p class="text-gray-200 mb-6 text-lg leading-relaxed">
+              La aplicaci&oacute;n busca empoderar al usuario, brind&aacute;ndole las herramientas necesarias para analizar sus prioridades (como oportunidades laborales, calidad de vida, costo de vida, sistema de salud, cultura, idioma, clima, etc.) y compararlas con las caracter&iacute;sticas de diversos pa&iacute;ses, facilitando as&iacute; una decisi&oacute;n m&aacute;s informada y alineada con sus objetivos de vida.
+            </p>
+            
+            <div class="mb-6">
+              <h4 class="text-xl font-semibold mb-3 text-blue-300">Funcionalidades Principales:</h4>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Explorar opciones: Descubrir pa&iacute;ses que quiz&aacute;s no hab&iacute;an considerado previamente.</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Comparar destinos: Evaluar diferentes pa&iacute;ses en funci&oacute;n de criterios espec&iacute;ficos.</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Visualizar informaci&oacute;n: Presentar datos complejos de manera clara y accesible.</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Personalizar la b&uacute;squeda: Filtrar y priorizar pa&iacute;ses seg&uacute;n sus intereses y prioridades.</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Reducir la incertidumbre: Proporcionar informaci&oacute;n objetiva para fundamentar la decisi&oacute;n.</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Simplificar el proceso: Ofrecer una plataforma centralizada para la investigaci&oacute;n inicial.</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mb-6">
+              <h4 class="text-xl font-semibold mb-3 text-blue-300">M&oacute;dulos Incluidos:</h4>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Calculadora de Costo de Vida: Permitir a los usuarios ingresar sus ingresos y gastos para estimar el costo de vida en diferentes pa&iacute;ses.</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Convertidor de Moneda: Convertir f&aacute;cilmente monedas para comparar precios.</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Traductor de Idiomas: Integraci&oacute;n con servicios de traducci&oacute;n para facilitar la comunicaci&oacute;n.</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Mapas Interactivos: Visualizaci&oacute;n de datos geogr&aacute;ficos, como densidad de poblaci&oacute;n, clima y ubicaci&oacute;n de ciudades importantes.</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Informaci&oacute;n de Visados: Informaci&oacute;n actualizada de los visados necesarios para cada pa&iacute;s, y los requisitos para poder obtenerlos.</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Desarrollo Multiplataforma</span>
+              <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Base de Datos</span>
+              <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Dise&ntilde;o UX/UI</span>
+              <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Implementaci&oacute;n</span>
+              <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Control de Calidad</span>
+            </div>
+          </div>
+
+          <!-- Proyecto 8: NeuroDiversoApp -->
+          <div class="bg-white/10 backdrop-blur-md rounded-xl p-8 text-white border border-white/10 hover:border-blue-400/50 transition-colors">
+            <h3 class="text-2xl font-bold mb-4 text-blue-400">NeuroDiversoApp</h3>
+            <p class="text-gray-200 mb-6 text-lg leading-relaxed">
+              La aplicaci&oacute;n tipo foro para personas neurodivergentes y con trastornos psiqui&aacute;tricos es una plataforma digital dise&ntilde;ada espec&iacute;ficamente para crear una comunidad en l&iacute;nea segura, inclusiva y de apoyo para individuos que experimentan diferencias neurol&oacute;gicas (como autismo, TDAH, dislexia, etc.) y/o condiciones de salud mental (como ansiedad, depresi&oacute;n, trastorno bipolar, esquizofrenia, etc.).
+            </p>
+
+            <div class="mb-6">
+              <h4 class="text-xl font-semibold mb-3 text-blue-300">Objetivos Principales:</h4>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Fomentar la conexi&oacute;n y el apoyo mutuo: Proporcionar un espacio donde los usuarios puedan interactuar, compartir experiencias, ofrecer consejos y sentirse comprendidos.</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Combatir el aislamiento y el estigma: Crear una comunidad donde los usuarios se sientan aceptados, validados y menos solos en sus experiencias.</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Facilitar el intercambio de informaci&oacute;n y recursos: Permitir a los usuarios compartir estrategias de afrontamiento, recursos &uacute;tiles y recomendaciones.</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Ofrecer un entorno seguro y moderado: Implementar mecanismos de moderaci&oacute;n para asegurar un espacio respetuoso y libre de discriminaci&oacute;n.</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Promover la autoayuda y el empoderamiento: Brindar un espacio para compartir logros y estrategias de autocuidado.</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mb-6">
+              <h4 class="text-xl font-semibold mb-3 text-blue-300">Caracter&iacute;sticas:</h4>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Foros de discusi&oacute;n organizados por temas espec&iacute;ficos</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Grupos privados para comunidades m&aacute;s peque&ntilde;as</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Mensajer&iacute;a directa entre usuarios</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Funciones de moderaci&oacute;n avanzadas</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Soporte para anonimato y seud&oacute;nimos</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Herramientas de afrontamiento personalizables</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Ejercicios guiados de mindfulness y meditaci&oacute;n</p>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-400 mt-1">•</span>
+                  <p class="text-gray-200">Interfaz personalizable seg&uacute;n necesidades individuales</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Desarrollo Multiplataforma</span>
+              <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Base de Datos</span>
+              <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Dise&ntilde;o UX/UI</span>
+              <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Implementaci&oacute;n</span>
+              <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Control de Calidad</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .gradient-text {
+    background: linear-gradient(45deg, #3b82f6, #60a5fa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+</style>
+
+<script>
+  function updateBackground() {
+    const container = document.getElementById('background-container');
+    const savedBackground = localStorage.getItem('selectedBackground');
+    
+    if (container && savedBackground) {
+      const backgroundDiv = document.createElement('div');
+      backgroundDiv.innerHTML = savedBackground;
+      const backgroundElement = backgroundDiv.firstElementChild;
+      
+      if (backgroundElement) {
+        backgroundElement.classList.add('fixed', 'inset-0', '-z-10');
+        container.innerHTML = backgroundElement.outerHTML;
+      }
+    }
+  }
+
+  updateBackground();
+  window.addEventListener('backgroundChanged', updateBackground);
+</script> 

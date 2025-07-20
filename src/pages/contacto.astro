@@ -1,0 +1,104 @@
+---
+import Navbar from '../components/Navbar';
+import Content from '../components/Content';
+import "../styles/global.css";
+---
+
+<div class="relative min-h-screen w-full overflow-hidden">
+  <Content client:load />
+  <div class="relative z-10">
+    <Navbar client:load />
+    <div class="container mx-auto px-4 py-8 mt-16">
+      <h1 class="text-4xl md:text-5xl font-bold text-center mb-12 gradient-text">Contacto</h1>
+      <div class="max-w-2xl mx-auto">
+        <form class="bg-black/40 backdrop-blur-md rounded-xl p-8 text-white border border-white/10">
+          <div class="mb-6">
+            <label for="nombre" class="block text-sm font-medium text-gray-200 mb-2">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              class="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-white placeholder-gray-400"
+              placeholder="Tu nombre"
+              required
+            />
+          </div>
+
+          <div class="mb-6">
+            <label for="email" class="block text-sm font-medium text-gray-200 mb-2">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-white placeholder-gray-400"
+              placeholder="tu@email.com"
+              required
+            />
+          </div>
+
+          <div class="mb-6">
+            <label for="asunto" class="block text-sm font-medium text-gray-200 mb-2">Asunto</label>
+            <input
+              type="text"
+              id="asunto"
+              name="asunto"
+              class="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-white placeholder-gray-400"
+              placeholder="&iquest;En qu&eacute; podemos ayudarte?"
+              required
+            />
+          </div>
+
+          <div class="mb-6">
+            <label for="mensaje" class="block text-sm font-medium text-gray-200 mb-2">Mensaje</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="6"
+              class="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-white placeholder-gray-400 resize-none"
+              placeholder="Escribe tu mensaje aqu&iacute;..."
+              required
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-black"
+          >
+            Enviar Mensaje
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .gradient-text {
+    background: linear-gradient(45deg, #3b82f6, #60a5fa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+</style>
+
+<script>
+  function updateBackground() {
+    const container = document.getElementById('background-container');
+    const savedBackground = localStorage.getItem('selectedBackground');
+    
+    if (container && savedBackground) {
+      const backgroundDiv = document.createElement('div');
+      backgroundDiv.innerHTML = savedBackground;
+      const backgroundElement = backgroundDiv.firstElementChild;
+      
+      if (backgroundElement) {
+        backgroundElement.classList.add('fixed', 'inset-0', '-z-10');
+        container.innerHTML = backgroundElement.outerHTML;
+      }
+    }
+  }
+
+  updateBackground();
+  window.addEventListener('backgroundChanged', updateBackground);
+</script> 

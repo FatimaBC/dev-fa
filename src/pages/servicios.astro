@@ -1,0 +1,50 @@
+---
+import Navbar from '../components/Navbar';
+import Projects from '../components/Projects';
+import Content from '../components/Content';
+import "../styles/global.css";
+---
+
+<div class="relative min-h-screen w-full overflow-hidden">
+  <Content client:load />
+  <div class="relative z-10">
+    <Navbar client:load />
+    <div class="container mx-auto px-4 py-8 mt-16">
+      <h1 class="text-4xl md:text-5xl font-bold text-center mb-12 gradient-text">Nuestros Servicios</h1>
+      <div class="max-w-6xl mx-auto">
+        <Projects client:load />
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .gradient-text {
+    background: linear-gradient(45deg, #3b82f6, #60a5fa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+</style>
+
+<script>
+  function updateBackground() {
+    const container = document.getElementById('background-container');
+    const savedBackground = localStorage.getItem('selectedBackground');
+    
+    if (container && savedBackground) {
+      const backgroundDiv = document.createElement('div');
+      backgroundDiv.innerHTML = savedBackground;
+      const backgroundElement = backgroundDiv.firstElementChild;
+      
+      if (backgroundElement) {
+        backgroundElement.classList.add('fixed', 'inset-0', '-z-10');
+        container.innerHTML = backgroundElement.outerHTML;
+      }
+    }
+  }
+
+  updateBackground();
+  window.addEventListener('backgroundChanged', updateBackground);
+</script> 

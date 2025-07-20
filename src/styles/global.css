@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+.gradient-text {
+    background: linear-gradient(to right, #6a5acd, #00bfff); /* Degradado morado a azul */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes matrix-rain {
+  from {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateY(50%);
+  }
+}
+
+.animate-matrix-rain {
+  animation: matrix-rain 20s linear infinite;
+}
