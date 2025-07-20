@@ -1,24 +1,57 @@
 {
-  "name": "dev-fa",
+  "name": "valkyria-technologies",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "Sitio web corporativo de Valkyria Technologies - Soluciones tecnológicas innovadoras",
+  "keywords": [
+    "astro",
+    "react",
+    "typescript",
+    "tailwindcss",
+    "valkyria",
+    "technologies",
+    "portfolio",
+    "corporate"
+  ],
+  "author": {
+    "name": "Fatima Bañuelos Ceceñas",
+    "email": "fatimabc9127@gmail.com",
+    "url": "https://valkyria-technologies.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/valkyria-technologies/website.git"
+  },
+  "homepage": "https://valkyria-technologies.com",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "start": "astro dev",
+    "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "^4.3.0",
-    "astro": "^5.12.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "zustand": "^5.0.6"
+    "@astrojs/react": "^3.0.10",
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "zustand": "^4.4.7"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.16",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
-    "tailwindcss": "^4.1.11"
-  }
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "tailwindcss": "^3.3.6",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.17.1",
+    "npm": ">=9.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }
