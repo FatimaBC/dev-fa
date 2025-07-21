@@ -1,3 +1,68 @@
-<footer class="absolute bottom-5 left-0 right-0 text-center text-gray-300 z-50">
-    Made with <a href="https://www.instagram.com/" target="_blank">Mono Informatico Dev Team</a>
+---
+import Github from "../icons/Github";
+import Instagram from "../icons/Instagram";
+import TikTok from "../icons/TikTok";
+import YouTube from "../icons/YouTube";
+---
+
+<footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Información de la empresa -->
+            <div class="col-span-1 md:col-span-2">
+                <h3 class="text-2xl font-bold mb-4 text-blue-400">Valkyria Technologies</h3>
+                <p class="text-gray-300 mb-4">
+                    Soluciones de software innovadoras que transforman ideas en realidades impactantes. 
+                    Especialistas en desarrollo web, móvil y consultoría tecnológica.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="https://github.com" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <Github />
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <Instagram />
+                    </a>
+                    <a href="https://tiktok.com" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <TikTok />
+                    </a>
+                    <a href="https://youtube.com" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <YouTube />
+                    </a>
+                </div>
+            </div>
+
+            <!-- Servicios -->
+            <div>
+                <h4 class="text-lg font-semibold mb-4 text-blue-400">Servicios</h4>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="/servicios" class="hover:text-white transition-colors">Desarrollo Web</a></li>
+                    <li><a href="/servicios" class="hover:text-white transition-colors">Apps Móviles</a></li>
+                    <li><a href="/servicios" class="hover:text-white transition-colors">Consultoría</a></li>
+                    <li><a href="/servicios" class="hover:text-white transition-colors">Mantenimiento</a></li>
+                </ul>
+            </div>
+
+            <!-- Contacto -->
+            <div>
+                <h4 class="text-lg font-semibold mb-4 text-blue-400">Contacto</h4>
+                <ul class="space-y-2 text-gray-300">
+                    <li>
+                        <a href="mailto:fatimabc9127@gmail.com" class="hover:text-white transition-colors">
+                            fatimabc9127@gmail.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+526181597514" class="hover:text-white transition-colors">
+                            +52 618 159 7514
+                        </a>
+                    </li>
+                    <li><a href="/contacto" class="hover:text-white transition-colors">Solicitar Presupuesto</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; 2024 Valkyria Technologies. Todos los derechos reservados.</p>
+        </div>
+    </div>
 </footer>

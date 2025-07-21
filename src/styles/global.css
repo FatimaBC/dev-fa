@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .gradient-text {
     background: linear-gradient(to right, #6a5acd, #00bfff); /* Degradado morado a azul */
